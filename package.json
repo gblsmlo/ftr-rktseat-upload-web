@@ -1,0 +1,39 @@
+{
+	"name": "@tc96/react-starter",
+	"version": "0.5.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "tsc -b && vite build",
+		"lint": "biome check --fix",
+		"lint:staged": "biome check --staged --fix",
+		"lint:ci": "biome ci",
+		"serve": "vite preview",
+		"prepare": "husky",
+		"type-check": "tsc --noEmit",
+		"test:ci": "echo 'No error found'",
+		"check:updates": "npm-check-updates -i --color"
+	},
+	"dependencies": {
+		"@tailwindcss/vite": "^4.0.15",
+		"@tc96/biome-config": "^0.0.5",
+		"react": "^19.0.0",
+		"react-dom": "^19.0.0",
+		"tailwindcss": "^4.0.15"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "1.9.4",
+		"@commitlint/cli": "19.8.0",
+		"@commitlint/config-conventional": "19.8.0",
+		"@types/react": "^19.0.12",
+		"@types/react-dom": "^19.0.4",
+		"@vitejs/plugin-react": "^4.3.4",
+		"autoprefixer": "10.4.21",
+		"globals": "^16.0.0",
+		"husky": "9.1.7",
+		"npm-check-updates": "^17.1.15",
+		"typescript": "~5.8.2",
+		"vite": "^6.2.2"
+	},
+	"sripts": {}
+}
